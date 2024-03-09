@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/blue-reimu/GIT/Behavior/map_checker/build",
+  "command": "/usr/bin/clang++ -DROOT=\\\"/home/blue-reimu/GIT/Behavior/map_checker/\\\" -I/usr/include/eigen3 -isystem /usr/include/opencv4 -g -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/global_assistant.dir/src/global_assistant_rechecker.cpp.o -c /home/blue-reimu/GIT/Behavior/map_checker/src/global_assistant_rechecker.cpp",
+  "file": "/home/blue-reimu/GIT/Behavior/map_checker/src/global_assistant_rechecker.cpp"
+}
+]
