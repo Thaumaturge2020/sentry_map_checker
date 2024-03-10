@@ -99,7 +99,7 @@ int main(){
     const auto toml_file = toml::parse(ROOT "src/config.toml");
     double map_width = toml::find<double>(toml_file,"map_width");
     double map_height = toml::find<double>(toml_file,"map_height");
-    std::string str = "static/now_map.png";
+    std::string str = "static/RMUA_new.png";
     auto img = cv::imread(ROOT + str);
 
     cv::resize(img,img,cv::Size(800,800*img.rows/img.cols));
@@ -131,7 +131,7 @@ int main(){
     fprintf(file,"point_position = [");
     for(int i=0,lim = my_dot_array.size();i<lim;++i){
         double X = my_dot_array[i].x,Y = my_dot_array[i].y;
-        fprintf(file,"[%lf,%lf]",X/img.cols*map_width,Y/img.rows*map_height);
+        fprintf(file,"[%lf,%lf]",X/img.cols*map_width,map_height-Y/img.rows*map_height);
         if(i!=lim-1)
         fprintf(file,",");
     }
